@@ -1,0 +1,102 @@
+{
+  // Editor
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontWeight": "500",
+  "editor.wordWrap": "on",
+  "editor.rulers": [
+    100
+  ],
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.scrollbar.verticalScrollbarSize": 6,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.stickyScroll.enabled": false,
+  "editor.smoothScrolling": true,
+  "explorer.confirmDelete": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "addMissingImports": "explicit",
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  //
+  //
+  // Terminal
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  //
+  //
+  // Privacy
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.enableExperiments": false,
+  "extensions.ignoreRecommendations": true,
+  "telemetry.telemetryLevel": "off",
+  "update.showReleaseNotes": false,
+  //
+  //
+  // Appearance
+  "material-icon-theme.activeIconPack": "react",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": true,
+  "workbench.startupEditor": "none",
+  "workbench.tree.indent": 16,
+  "window.customTitleBarVisibility": "never",
+  "window.menuBarVisibility": "toggle",
+  "window.restoreFullscreen": true,
+  "window.zoomLevel": 1,
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": false,
+  //
+  //
+  // Languages
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[dart]": {
+    "editor.formatOnType": true,
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "debug.openDebug": "openOnDebugBreak",
+  "debug.internalConsoleOptions": "openOnSessionStart",
+  //
+  //
+  // Neovim
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "vscode-neovim.compositeKeys": {
+    "jk": {
+      "command": "vscode-neovim.escape"
+    }
+  },
+  "vscode-neovim.ctrlKeysForInsertMode": [],
+  "vscode-neovim.ctrlKeysForNormalMode": [
+    "v"
+  ],
+  "update.mode": "none",
+  "editor.accessibilitySupport": "off",
+  "editor.glyphMargin": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "window.newWindowProfile": "Default",
+  "vscode-neovim.neovimWidth": 1,
+  "vscode-neovim.mouseSelectionDebounceTime": 0,
+  "vscode-neovim.neovimClean": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "css.validate": false,
+  "chat.commandCenter.enabled": false,
+  "chat.agent.enabled": false,
+  "workbench.colorTheme": "Dracula Theme",
+  "editor.defaultFormatter": "biomejs.biome",
+}

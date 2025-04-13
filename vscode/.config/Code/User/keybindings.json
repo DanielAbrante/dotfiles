@@ -1,0 +1,56 @@
+// Place your key bindings in this file to override the defaults 
+[
+  // Switch between active tabs
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  },
+  // Previous command in terminal
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u001b[A"
+    },
+    "when": "terminalFocus"
+  },
+  // Movements in insert mode
+  {
+    "command": "vscode-neovim.send",
+    "key": "alt+h",
+    "when": "editorTextFocus && neovim.mode == insert",
+    "args": "<C-o>h",
+  },
+  {
+    "command": "vscode-neovim.send",
+    "key": "alt+l",
+    "when": "editorTextFocus && neovim.mode == insert",
+    "args": "<C-o>l",
+  },
+  {
+    "command": "vscode-neovim.send",
+    "key": "alt+j",
+    "when": "editorTextFocus && neovim.mode == insert",
+    "args": "<C-o>j",
+  },
+  {
+    "command": "vscode-neovim.send",
+    "key": "alt+k",
+    "when": "editorTextFocus && neovim.mode == insert",
+    "args": "<C-o>k",
+  },
+  // Toggle between terminal and editor focus
+  {
+    "key": "ctrl+9",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+]
