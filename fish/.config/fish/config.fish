@@ -8,3 +8,5 @@ source ~/.asdf/asdf.fish
 
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/usr/bin/flutter/bin"
+
+abbr --add gacm 'git add . && git commit -m "'
