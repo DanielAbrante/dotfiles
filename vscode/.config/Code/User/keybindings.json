@@ -1,12 +1,11 @@
-// Place your key bindings in this file to override the defaults 
 [
   // Switch between active tabs
   {
-    "key": "ctrl+tab",
+    "key": "ctrl+]",
     "command": "workbench.action.nextEditor"
   },
   {
-    "key": "ctrl+shift+tab",
+    "key": "ctrl+[",
     "command": "workbench.action.previousEditor"
   },
   // Previous command in terminal
@@ -31,18 +30,6 @@
     "when": "editorTextFocus && neovim.mode == insert",
     "args": "<C-o>l",
   },
-  {
-    "command": "vscode-neovim.send",
-    "key": "alt+j",
-    "when": "editorTextFocus && neovim.mode == insert",
-    "args": "<C-o>j",
-  },
-  {
-    "command": "vscode-neovim.send",
-    "key": "alt+k",
-    "when": "editorTextFocus && neovim.mode == insert",
-    "args": "<C-o>k",
-  },
   // Toggle between terminal and editor focus
   {
     "key": "ctrl+9",
@@ -52,5 +39,22 @@
     "key": "ctrl+9",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
+  },
+  // New integrated terminal
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  // Switch between active terminal tabs
+  {
+    "key": "ctrl+]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
   },
 ]
