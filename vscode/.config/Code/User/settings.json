@@ -22,6 +22,8 @@
   },
   "editor.minimap.enabled": false,
   "editor.formatOnSave": true,
+  "editor.accessibilitySupport": "off",
+  "editor.glyphMargin": false,
   "files.autoSave": "afterDelay",
   //
   //
@@ -36,6 +38,7 @@
   "extensions.ignoreRecommendations": true,
   "telemetry.telemetryLevel": "off",
   "update.showReleaseNotes": false,
+  "telemetry.feedback.enabled": false,
   //
   //
   // Appearance
@@ -48,7 +51,7 @@
   "window.customTitleBarVisibility": "never",
   "window.menuBarVisibility": "toggle",
   "window.restoreFullscreen": true,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0.5,
   "explorer.compactFolders": false,
   "breadcrumbs.enabled": false,
   //
@@ -80,23 +83,26 @@
   "vscode-neovim.ctrlKeysForNormalMode": [
     "v"
   ],
-  "update.mode": "none",
-  "editor.accessibilitySupport": "off",
-  "editor.glyphMargin": false,
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "window.newWindowProfile": "Default",
   "vscode-neovim.neovimWidth": 1,
   "vscode-neovim.mouseSelectionDebounceTime": 0,
   "vscode-neovim.neovimClean": true,
+  // 
+  // 
+  // Others
+  "update.mode": "none",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "window.newWindowProfile": "Default",
   "workbench.iconTheme": "material-icon-theme",
   "editor.inlineSuggest.enabled": true,
   "editor.quickSuggestions": {
     "strings": true
   },
-  "css.validate": false,
   "chat.commandCenter.enabled": false,
   "chat.agent.enabled": false,
+  "git.openRepositoryInParentFolders": "never",
+  "explorer.confirmDragAndDrop": false,
   "workbench.colorTheme": "Dracula Theme",
-  "editor.defaultFormatter": "biomejs.biome",
+  "chat.focusWindowOnConfirmation": false,
+  "chat.agent.maxRequests": 0,
 }
