@@ -30,6 +30,8 @@
   // Terminal
   "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
   //
   //
   // Privacy
