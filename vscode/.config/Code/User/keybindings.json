@@ -57,4 +57,21 @@
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
   },
+  {
+    "key": "tab",
+    "command": "-acceptSelectedSuggestion",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+[Semicolon]",
+    "command": "workbench.view.extension.todo-tree-container"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "editor.action.sourceAction",
+    "args": {
+      "kind": "source.addMissingImports",
+      "apply": "first"
+    }
+  }
 ]

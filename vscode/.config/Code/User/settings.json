@@ -1,65 +1,85 @@
 {
+  // ────────────────────────────────
   // Editor
-  "editor.fontLigatures": true,
+  // ────────────────────────────────
   "editor.fontFamily": "Fira Code",
-  "editor.fontWeight": "500",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "450",
+  "editor.lineHeight": 1.6,
   "editor.wordWrap": "on",
   "editor.rulers": [
     100
   ],
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.gotoLocation.multipleDefinitions": "goto",
-  "editor.scrollbar.verticalScrollbarSize": 6,
+  "editor.scrollbar.verticalScrollbarSize": 14,
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorSurroundingLines": 5,
   "editor.stickyScroll.enabled": false,
   "editor.smoothScrolling": true,
-  "explorer.confirmDelete": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "addMissingImports": "explicit",
-    "quickfix.biome": "explicit",
-    "source.organizeImports.biome": "explicit"
+    "source.fixAll.biome": "explicit"
   },
   "editor.minimap.enabled": false,
   "editor.formatOnSave": true,
   "editor.accessibilitySupport": "off",
   "editor.glyphMargin": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.colorDecorators": true,
+  // ────────────────────────────────
+  // Files
+  // ────────────────────────────────
   "files.autoSave": "afterDelay",
-  //
-  //
+  // ────────────────────────────────
   // Terminal
+  // ────────────────────────────────
   "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
-  //
-  //
+  // ────────────────────────────────
   // Privacy
-  "workbench.settings.enableNaturalLanguageSearch": false,
+  // ────────────────────────────────
   "workbench.enableExperiments": false,
   "extensions.ignoreRecommendations": true,
   "telemetry.telemetryLevel": "off",
-  "update.showReleaseNotes": false,
   "telemetry.feedback.enabled": false,
-  //
-  //
+  "update.showReleaseNotes": false,
+  // ────────────────────────────────
   // Appearance
+  // ────────────────────────────────
   "material-icon-theme.activeIconPack": "react",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula Theme Soft",
   "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.indent": 16,
   "workbench.activityBar.location": "hidden",
   "workbench.statusBar.visible": true,
   "workbench.startupEditor": "none",
-  "workbench.tree.indent": 16,
-  "window.customTitleBarVisibility": "never",
-  "window.menuBarVisibility": "toggle",
   "window.restoreFullscreen": true,
-  "window.zoomLevel": 0.5,
+  "window.zoomLevel": 1.5,
+  "window.menuBarVisibility": "toggle",
   "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
   "breadcrumbs.enabled": false,
-  //
-  //
+  "zenMode.centerLayout": true,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "workbench.editor.centeredLayoutFixedWidth": true,
+  "workbench.layoutControl.enabled": false,
+  "workbench.navigationControl.enabled": false,
+  "window.commandCenter": false,
+  // ────────────────────────────────
   // Languages
+  // ────────────────────────────────
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.importModuleSpecifierEnding": "js",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[dart]": {
     "editor.formatOnType": true,
@@ -68,11 +88,17 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": "off"
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // ────────────────────────────────
+  // Debug
+  // ────────────────────────────────
   "debug.openDebug": "openOnDebugBreak",
   "debug.internalConsoleOptions": "openOnSessionStart",
-  //
-  //
+  // ────────────────────────────────
   // Neovim
+  // ────────────────────────────────
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
@@ -85,26 +111,27 @@
   "vscode-neovim.ctrlKeysForNormalMode": [
     "v"
   ],
-  "vscode-neovim.neovimWidth": 1,
   "vscode-neovim.mouseSelectionDebounceTime": 0,
   "vscode-neovim.neovimClean": true,
-  // 
-  // 
-  // Others
-  "update.mode": "none",
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "window.newWindowProfile": "Default",
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.inlineSuggest.enabled": true,
-  "editor.quickSuggestions": {
-    "strings": true
+  // ────────────────────────────────
+  // Git
+  // ────────────────────────────────
+  "git.openRepositoryInParentFolders": "never",
+  // ────────────────────────────────
+  // Search
+  // ────────────────────────────────
+  "search.exclude": {
+    "**/package-lock.json": true
   },
+  // ────────────────────────────────
+  // Chat
+  // ────────────────────────────────
   "chat.commandCenter.enabled": false,
   "chat.agent.enabled": false,
-  "git.openRepositoryInParentFolders": "never",
-  "explorer.confirmDragAndDrop": false,
-  "workbench.colorTheme": "Dracula Theme",
-  "chat.focusWindowOnConfirmation": false,
-  "chat.agent.maxRequests": 0,
+  // ────────────────────────────────
+  // Others
+  // ────────────────────────────────
+  "update.mode": "none",
+  "window.newWindowProfile": "Default",
+  "biome.suggestInstallingGlobally": false
 }
