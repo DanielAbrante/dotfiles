@@ -1,0 +1,28 @@
+theme = "dracula"
+
+[editor]
+line-number = "absolute"
+bufferline = "always"
+rulers = [80]
+
+[editor.auto-save]
+focus-lost = false
+after-delay.enable = true
+after-delay.timeout = 1000
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
+wrap-indicator = ""
+
+[keys.insert]
+j = { k = "normal_mode" }
+
+[keys.normal]
+C-i = ":bc"
+
