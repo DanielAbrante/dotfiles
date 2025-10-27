@@ -5,7 +5,7 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
-  "editor.fontWeight": "450",
+  "editor.fontWeight": "400",
   "editor.lineHeight": 1.6,
   "editor.wordWrap": "on",
   "editor.rulers": [
@@ -13,13 +13,12 @@
   ],
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.gotoLocation.multipleDefinitions": "goto",
-  "editor.scrollbar.verticalScrollbarSize": 14,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorSurroundingLines": 5,
   "editor.stickyScroll.enabled": false,
   "editor.smoothScrolling": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.biome": "explicit"
+    "source.fixAll.biome": "explicit",
   },
   "editor.minimap.enabled": false,
   "editor.formatOnSave": true,
@@ -30,6 +29,7 @@
     "strings": true
   },
   "editor.colorDecorators": true,
+  "editor.occurrencesHighlight": "off",
   // ────────────────────────────────
   // Files
   // ────────────────────────────────
@@ -39,8 +39,10 @@
   // ────────────────────────────────
   "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 12,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.stickyScroll.enabled": false,
   // ────────────────────────────────
   // Privacy
   // ────────────────────────────────
@@ -49,19 +51,19 @@
   "telemetry.telemetryLevel": "off",
   "telemetry.feedback.enabled": false,
   "update.showReleaseNotes": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
   // ────────────────────────────────
   // Appearance
   // ────────────────────────────────
   "material-icon-theme.activeIconPack": "react",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dracula Theme Soft",
+  "workbench.colorTheme": "Dracula Theme",
   "workbench.tree.enableStickyScroll": false,
-  "workbench.tree.indent": 16,
+  "workbench.tree.indent": 20,
   "workbench.activityBar.location": "hidden",
   "workbench.statusBar.visible": true,
   "workbench.startupEditor": "none",
-  "window.restoreFullscreen": true,
-  "window.zoomLevel": 1.5,
+  "window.restoreFullscreen": false,
+  "window.zoomLevel": 1,
   "window.menuBarVisibility": "toggle",
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
@@ -123,15 +125,22 @@
   "search.exclude": {
     "**/package-lock.json": true
   },
+  "search.collapseResults": "alwaysCollapse",
   // ────────────────────────────────
   // Chat
   // ────────────────────────────────
   "chat.commandCenter.enabled": false,
-  "chat.agent.enabled": false,
   // ────────────────────────────────
   // Others
   // ────────────────────────────────
   "update.mode": "none",
   "window.newWindowProfile": "Default",
-  "biome.suggestInstallingGlobally": false
+  "biome.suggestInstallingGlobally": false,
+  "window.newWindowDimensions": "maximized",
+  "window.titleBarStyle": "native",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "chat.agent.enabled": false,
+  "chat.disableAIFeatures": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "scm.diffDecorations": "gutter",
 }
