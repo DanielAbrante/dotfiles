@@ -4,11 +4,18 @@ theme = "dracula"
 line-number = "absolute"
 bufferline = "always"
 rulers = [80]
+true-color = true
+completion-trigger-len = 1
+completion-timeout = 5
+continue-comments = false
+
+[editor.indent-guides]
+render = true
 
 [editor.auto-save]
-focus-lost = false
+focus-lost = true
 after-delay.enable = true
-after-delay.timeout = 1000
+after-delay.timeout = 500
 
 [editor.cursor-shape]
 insert = "bar"
@@ -20,9 +27,38 @@ enable = true
 wrap-at-text-width = true
 wrap-indicator = ""
 
+[keys.normal.space.t]
+z = ":toggle gutters.line-numbers.min-width 47 3"
+
 [keys.insert]
 j = { k = "normal_mode" }
 
 [keys.normal]
 C-i = ":bc"
 
+[editor.statusline]
+left = [
+  "mode",
+  "spinner",
+  "version-control",
+  "spacer",
+  "separator",
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator",
+
+]
+center = []
+right = [
+  "diagnostics",
+  "workspace-diagnostics",
+  "position",
+  "total-line-numbers",
+  "position-percentage",
+  "file-encoding",
+  "file-line-ending",
+  "file-type",
+  "register",
+  "selections",
+]
+separator = "│"

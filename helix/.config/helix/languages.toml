@@ -3,7 +3,7 @@ command = "emmet-language-server"
 args = ["--stdio"]
 
 [language-server]
-biome = { command = "biome", args = ["lsp-proxy"] }
+biome = { command = "pnpm", args = ["exec", "biome", "lsp-proxy"] }
 
 [[language]]
 name = "javascript"
@@ -18,7 +18,7 @@ auto-format = true
 [[language]]
 name = "tsx"
 auto-format = true
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome", "emmet-lsp" ]
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
 
 [[language]]
 name = "jsx"
@@ -32,4 +32,5 @@ language-servers = [ { name = "vscode-json-language-server", except-features = [
 [[language]]
 name = "html"
 roots = [".git"]
-language-servers = ["emmet-lsp"]
+language-servers = ["emmet-lsp", "vscode-html-language-server"]
+indent = {tab-width = 4, unit = "    "}
