@@ -2,14 +2,21 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+~/.local/bin/mise activate fish | source
+
 starship init fish | source
+zoxide init fish | source
 
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/usr/bin/flutter/bin"
 
-abbr --set-cursor=! --add gacm 'git add --all && git commit -m "!"'
+set -x ANDROID_HOME $HOME/Android/sdk
 
-~/.local/bin/mise activate fish | source
+fish_add_path $ANDROID_HOME/cmdline-tools/latest/bin
+fish_add_path $ANDROID_HOME/platform-tools
+fish_add_path $ANDROID_HOME/emulator
+
+abbr --set-cursor=! --add gacm 'git add --all && git commit -m "!"'
 
 # pnpm
 set -gx PNPM_HOME "/home/daniel/.local/share/pnpm"
@@ -21,8 +28,6 @@ end
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
-
-zoxide init fish | source
 
 function dev
     if test -f pnpm-lock.yaml
